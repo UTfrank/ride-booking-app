@@ -1,13 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
+import { Redirect } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = () => {
-  return (
-    <SafeAreaView className="flex h-screen w-full">
-      <Text className="text-red-600">Hello, World!</Text>
-    </SafeAreaView>
-  );
+  return <Redirect href="/(auth)/" />;
 };
 
 export default Home;
